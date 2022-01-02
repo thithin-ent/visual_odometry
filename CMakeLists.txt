@@ -16,21 +16,14 @@ include_directories( "/usr/include/eigen3" )
 # OpenCV
 find_package( OpenCV 3.4 REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
+# RealSense2
 find_package(realsense2 REQUIRED)
 include_directories( ${realsense2_INCLUDE_DIRS} )
 
-# Sophus 
-#find_package( Sophus REQUIRED )
-#include_directories( ${Sophus_INCLUDE_DIRS} )
-# G2O
-#find_package( G2O REQUIRED )
-#include_directories( ${G2O_INCLUDE_DIRS} )
 
 set( THIRD_PARTY_LIBS 
     ${OpenCV_LIBS}
     ${realsense2_LIBRARY}
-#    ${Sophus_LIBRARIES}
-#    g2o_core g2o_stuff g2o_types_sba
 )
 ############### source and test ######################
 include_directories( ${PROJECT_SOURCE_DIR}/include )
