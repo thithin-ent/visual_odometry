@@ -9,9 +9,11 @@ visual odometry using PnP solve
 
 # how to use
 
-    1. git clone repository
-    2. cd visual_odometry/build
-    3. cmake ..
-    4. make
-    5. cd ../bin
-    6. ./(bin_file)
+    git clone repository
+    cd visual_odometry/build
+    cmake ..
+    make
+    cd ../bin
+    ./(bin_file)
+
+# example
