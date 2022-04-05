@@ -15,5 +15,3 @@ visual odometry using PnP solve
     make
     cd ../bin
     ./(bin_file)
-
-# example
